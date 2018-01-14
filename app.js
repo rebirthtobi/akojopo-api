@@ -4,7 +4,7 @@ var route = require('./routes');
 
 
 var app = express();
-var port = 8500;
+var port = process.env.PORT || 8500;
 var authRoutes = express.Router();
 var apiRoutes = express.Router();
 
